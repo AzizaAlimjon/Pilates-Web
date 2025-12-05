@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pilates Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Pilates Studio</h1>
+  <p>Welcome to our Pilates classes!</p>
+
+  <h2>Class Schedule</h2>
+  <table class="fade-in" border="1">
+    <tr>
+      <th>Class</th><th>Instructor</th><th>Time</th><th>Spots</th>
+    </tr>
+    <tr>
+      <td>Mat Pilates</td><td>Alice</td><td>10:00 AM</td><td>5</td>
+    </tr>
+    <tr>
+      <td>Reformer Pilates</td><td>Bob</td><td>2:00 PM</td><td>8</td>
+    </tr>
+  </table>
+
+  <h2>Benefits of Pilates</h2>
+  <ul>
+    <li>Improves flexibility</li>
+    <li>Strengthens core</li>
+    <li>Reduces stress</li>
+  </ul>
+
+  <h2>Sign Up</h2>
+  <form id="signupForm">
+    Name: <input type="text" id="name"><br><br>
+    Email: <input type="text" id="email"><br><br>
+    Class:
+    <select id="classSelect">
+      <option>Mat Pilates</option>
+      <option>Reformer Pilates</option>
+    </select><br><br>
+    Level:
+    <input type="radio" name="level" value="Beginner"> Beginner
+    <input type="radio" name="level" value="Advanced"> Advanced<br><br>
+    <!-- btn class added here -->
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <h2>Pilates Tips</h2>
+  <div id="tips"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
